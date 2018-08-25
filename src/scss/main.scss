@@ -1,0 +1,22 @@
+*,*::before,*::after{ margin:0; padding:0; box-sizing:inherit; }
+html{ box-sizing:border-box; color:rgb(50,50,50);}
+
+$pri-red:#f42540;
+$pri-white:rgb(235,235,245);
+
+.row{
+    padding:0 3rem;
+    @media(max-width:400px){padding:0 1rem;}
+}
+.title{font-family: 'Oleo Script', cursive; font-size:3.7rem;}
+
+
+@import 'component/logo';
+@import 'component/btn';
+@import 'component/contact-form';
+
+@import 'layout/header';
+@import 'layout/featured';
+@import 'layout/types';
+@import 'layout/footer';
+@import 'layout/nav';

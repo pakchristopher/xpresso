@@ -1,0 +1,46 @@
+.footer{
+    font-family: 'Roboto', sans-serif; font-weight:300;
+    background-image:
+        linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+        url(/../../../assets/images/footerbg2.jpg)
+    ;
+    background-size:cover;
+    color:rgb(197, 194, 168);
+    .row{
+        padding:7rem 3rem;
+        @media(max-width:400px){padding:3rem 0;}
+    }
+    .title{margin-bottom:2rem;}
+
+    &-icon{width:25px; height:25px; fill:$pri-white;}
+
+    &__content{
+        display:flex;
+        justify-content:space-between;
+        @media(max-width:800px){flex-wrap:wrap;}
+        &__location{
+            @media(max-width:400px){margin-bottom:3.5rem;}
+        }
+
+        @media(max-width:400px){
+            flex-wrap:wrap;
+        }
+
+        &__div{
+            display:flex; align-items:center;
+            &:not(:last-of-type){margin-bottom:1rem;}
+
+        }
+        &__span{
+            margin-left:.75rem; font-size:1.25rem;
+            small{color:rgb(140,140,140);}
+            @media(max-width:470px){font-size:1rem;}
+            // @media(max-width:400px){font-size:1rem;}
+        }
+
+    }
+
+    .contact-form{
+        @media(max-width:800px){width:100%;margin-top:3rem;}
+    }
+}

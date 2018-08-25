@@ -1,0 +1,40 @@
+.types{
+    &__content{
+        display:flex;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+        &-card{
+            flex:1 360px;
+            height:275px;
+            position: relative;
+            overflow:hidden;
+            h3{
+                font-family: 'Roboto', sans-serif; font-weight:500; font-size:1.7rem;
+                position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:1;
+            }
+            
+            img{
+                z-index:0;
+                position:absolute; top:0; left:0;
+                width:120%;height:120%;
+                object-fit:cover;
+                opacity:.25;
+            }
+
+            &:hover img{opacity:.75;}
+            @media(min-width:1400px){flex-basis:25%; height:350px;}
+        }
+    }
+
+    &.singleorigin{
+        background-color:white;
+    }
+    &.blend{
+        background-color:rgb(240, 230, 210);
+
+    }
+
+    .row{margin-bottom:2rem;}
+    .title.singleorigin{padding-top:7rem;}
+    .title.blend{padding-top:7rem;}
+}

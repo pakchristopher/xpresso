@@ -1,0 +1,13 @@
+.btn{
+    // background-color:pink;
+    display:inline-block;
+    border-radius:50px;
+    border:2px solid transparent;
+    padding:10px 45px;
+    &:link,&:visited{
+        text-decoration:none;
+    }
+
+    &-red{ background-color:$pri-red; color:$pri-white; }
+    &-ghost{ background-color:transparent; border:2px solid $pri-red; color:inherit; }
+}
